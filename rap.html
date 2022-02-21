@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- links e fonts -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- Box Icons -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'
+            rel='stylesheet'>
+        <!-- Google Fonts -->
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+            />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+        <link rel="stylesheet" href="css/relogio.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="card.css">
+
+        <title>Music</title>
+
+
+        <!-- Demo styles -->
+        <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+
+        body {
+          background: #eee;
+          background-image: url(img/efk.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          font-family: 'Open Sans', sans-serif;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+  
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 300px;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+        }
+      </style>
+    </head>
+    <body>
+
+        <main>
+
+            <!-- <nav class="menu"> -->
+            <div class="sidebar">
+                <div class="logoContent">
+                    <div class="logo">
+                        <i class='bx bxl-nodejs'></i>
+                        <div class="logoName">Tiago Gomes</div>
+                    </div>
+                    <!-- logo -->
+                    <i class='bx bx-menu' id="btn"></i>
+                </div>
+                <!-- logoContent -->
+                <ul class="nav_list">
+
+                    <li>
+                        <i class='bx bx-search'></i>
+                        <input type="search" name="search"
+                            placeholder="Procurar...">
+                        <span class="toolipe">Procurar</span>
+                    </li>
+                    <li>
+                        <a href="menu.html" class="ativo">
+                            <i class='bx bx-grid-alt'></i>
+                            <span class="links_name">Home </span>
+                            <!-- Music Dashboard -->
+                            <span class="toolipe">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="music.html">
+                            <i class='bx bx-grid-alt'></i>
+                            <span class="links_name">Musicas </span>
+                            <!-- Music Dashboard -->
+                            <span class="toolipe">Musicas</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">
+                            <i class='bx bx-user'></i>
+                            <span class="links_name">Usuário</span>
+                            <span class="toolipe">Usuário</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-cog'></i>
+                            <span class="links_name">Configurações</span>
+                            <span class="toolipe">Configurações</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="listaM.html">
+                            <i class='bx bx-folder-open'></i>
+                            <span class="links_name">Arquivos</span>
+                            <span class="toolipe">Arquivos</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-chat'></i>
+                            <span class="links_name">Mensagens</span>
+                            <span class="toolipe">Mensagens</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-bar-chart'></i>
+                            <span class="links_name">Relatórios</span>
+                            <span class="toolipe">Relatórios</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-cart-alt'></i>
+                            <span class="links_name">Vendas</span>
+                            <span class="toolipe">Vendas</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- nav_list -->
+                <div class="profileContent">
+                    <div class="profile">
+                        <div class="profileDetail">
+                            <img src="./img/brunosalmito.png">
+                            <div class="name_job">
+                                <div class="name">Tiago Gomes</div>
+                                <div class="job">Web Developer</div>
+                            </div>
+                        </div>
+                        <!-- profileDetail -->
+                        <i class='bx bx-log-out' id="logout" onclick="sair()"></i>
+                    </div>
+                    <!-- profile -->
+                </div>
+                <!-- profileContent -->
+            </div>
+            <!-- sidebar -->
+            <!-- </nav> -->
+            <!-- <div class="homeContent">
+                <h2>Home</h2>
+            </div> -->
+            <div class="container">
+
+                <!-- font icons -->
+                <div class="icons">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </div>
+                <!-- icons -->
+
+                <div class="time">
+                    <div class="time-colon">
+                        <div class="text-box">
+                            <span class="num hour">00</span>
+                            <!-- <span class="text">Horas</span> -->
+                        </div>
+                        <!-- text-box -->
+                        <span class="colon">:</span>
+                    </div>
+                    <!-- time-colon -->
+
+                    <div class="time-colon">
+                        <div class="text-box">
+                            <span class="num min">00</span>
+                            <!-- <span class="text">Minutos</span> -->
+                        </div>
+                        <!-- text-box -->
+                        <span class="colon">:</span>
+                    </div>
+                    <!-- time-colon -->
+
+
+                    <div class="time-colon">
+                        <div class="text-box">
+                            <span class="num sec">00</span>
+                            <!-- <span class="text">Segundos</span> -->
+                        </div>
+                        <!-- text-box -->
+                        <span class="am-pm">AM</span>
+                    </div>
+                    <!-- time-colon -->
+                </div>
+
+                <!-- time -->
+            </div>
+            <!-- container -->
+
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div>
+                        <!-- <div class="swiper-slide"> -->
+                        <main class="cards">
+                            <div class="swiper-slide">
+                                <section class="card contact">
+                                    <div class="icon">
+                                        <img
+                                            src="img/Cantores/pexels-cottonbro-7520369.jpg"
+                                            aria-placeholder="Gospel"
+                                            alt="Contact
+                                            us.">
+                                    </div>
+                                </br>  </br>  </br>  </br>
+                                    <h3>Gospel</h3>
+                                    <!-- <span>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</span> -->
+                                    <a href="listaM.html"><button>Esculte</button></a>
+                                </section>
+                            </div>
+                        </main>
+                    </div>
+
+                    <div>
+                        <!-- <div class="swiper-slide"> -->
+                        <main class="cards">
+                            <div class="swiper-slide">
+                                <section class="card contact">
+                                    <div class="icon">
+                                        <img
+                                            src="img/Cantores/pexels-yan-krukov-9008831.jpg"
+                                            aria-placeholder="Gospel"
+                                            alt="Contact
+                                            us.">
+                                    </div>
+                                    </br>  </br>  </br>  </br>
+                                    <h3>Gospel</h3>
+                                    <!-- <span>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</span> -->
+                                    <a href="listaM.html"><button>Esculte</button></a>
+                                </section>
+                            </div>
+                        </main>
+                    </div>
+
+                    <div >
+                        <main class="cards">
+                            <div class="swiper-slide">
+                                <section class="card shop">
+                                    <div class="icon">
+                                        <img src="img/thumb-350-58479.jpg"
+                                            alt="Shop
+                                            here.">
+                                    </div>
+                                </br>  </br>  </br>  </br>
+                                    <h3>Rock</h3>
+                                    <!-- <span>Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing elit.</span> -->
+                                    <button>acessar</button>
+                                </section>
+                            </div>
+                        </main>
+                    </div>
+                    <div >
+                        <main class="cards">
+                            <div class="swiper-slide">
+                                <section class="card shop">
+                                    <div class="icon">
+                                        <img src="img/thumb-350-58479.jpg"
+                                            alt="Shop
+                                            here.">
+                                    </div>
+                                </br>  </br>  </br>  </br>
+                                    <h3>Rock</h3>
+                                    <!-- <span>Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing elit.</span> -->
+                                    <button>acessar</button>
+                                </section>
+                            </div>
+                        </main>
+                    </div>
+                    <div >
+                        <main class="cards">
+                            <div class="swiper-slide">
+                                <section class="card shop">
+                                    <div class="icon">
+                                        <img src="img/thumb-350-58479.jpg"
+                                            alt="Shop
+                                            here.">
+                                    </div>
+                                </br>  </br>  </br>  </br>
+                                    <h3>Rock</h3>
+                                    <!-- <span>Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing elit.</span> -->
+                                    <button>acessar</button>
+                                </section>
+                            </div>
+                        </main>
+                    </div>
+                    <div >
+                        <main class="cards">
+                            <div class="swiper-slide">
+                                <section class="card shop">
+                                    <div class="icon">
+                                        <img src="img/thumb-350-58479.jpg"
+                                            alt="Shop
+                                            here.">
+                                    </div>
+                                </br>  </br>  </br>  </br>
+                                    <h3>Rock</h3>
+                                    <!-- <span>Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing elit.</span> -->
+                                    <button>acessar</button>
+                                </section>
+                            </div>
+                        </main>
+                    </div>
+                    <div >
+                        <main class="cards">
+                            <div class="swiper-slide">
+                                <section class="card shop">
+                                    <div class="icon">
+                                        <img src="img/thumb-350-58479.jpg"
+                                            alt="Shop
+                                            here.">
+                                    </div>
+                                </br>  </br>  </br>  </br>
+                                    <h3>Rock</h3>
+                                    <!-- <span>Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing elit.</span> -->
+                                    <button>acessar</button>
+                                </section>
+                            </div>
+                        </main>
+                    </div>
+                     <div >
+                        <main class="cards">
+                            <div class="swiper-slide">
+                                <section class="card shop">
+                                    <div class="icon">
+                                        <img src="img/thumb-350-58479.jpg"
+                                            alt="Shop
+                                            here.">
+                                    </div>
+                                </br>  </br>  </br>  </br>
+                                    <h3>Rock</h3>
+                                    <!-- <span>Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing elit.</span> -->
+                                    <button>acessar</button>
+                                </section>
+                            </div>
+                        </main>
+                    </div>
+                    <!-- <div class="swiper-slide">
+                        <main class="cards">
+                            <div class="swiper-slide">
+                                <section class="card about">
+                                    <div class="icon">
+                                        <img src="assets/Play.png" alt="About
+                                            us.">
+                                    </div>
+                                    <h3>About us.</h3>
+                                    <span>Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing elit.</span>
+                                    <button>Learn More</button>
+                                </section>
+                            </div>
+                        </main>
+                    </div> -->
+                    <div class="swiper-slide">
+                        <img
+                            src="https://swiperjs.com/demos/images/nature-2.jpg"
+                            />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://swiperjs.com/demos/images/nature-3.jpg"
+                            />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://swiperjs.com/demos/images/nature-4.jpg"
+                            />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://swiperjs.com/demos/images/nature-5.jpg"
+                            />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://swiperjs.com/demos/images/nature-6.jpg"
+                            />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://swiperjs.com/demos/images/nature-7.jpg"
+                            />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://swiperjs.com/demos/images/nature-8.jpg"
+                            />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://swiperjs.com/demos/images/nature-9.jpg"
+                            />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </main>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+            });
+          </script>
+        <script src="tilt.js"></script>
+        <script>
+        let list = document.querySelectorAll('.box li');
+        let bg = document.querySelector('.socialMedia');
+
+        list.forEach(elements => {
+
+            // Background social color
+            elements.addEventListener('mouseenter', function(event){
+                let color = event.target.getAttribute('data-color');
+                bg.style.backgroundColor = color;
+            })
+
+            // Background color default
+            elements.addEventListener('mouseleave', function (event){
+                bg.style.backgroundColor = '#fff';
+            })
+
+        })
+
+        VanillaTilt.init(document.querySelectorAll(".box li a"), {
+		max: 30,
+		speed: 400,
+        glare: true,
+        "max-glare":  1
+
+	});
+    </script>
+        <script>
+            // variáveis
+            const btn = document.querySelector('#btn');
+            const bxSearch = document.querySelector('.bx-search');
+            const sidebar = document.querySelector('.sidebar');
+            const home = document.querySelector('.homeContent');
+    
+            // Eventos de escuta do click
+            btn.addEventListener('click',()=>{
+                sidebar.classList.toggle('active');
+                home.classList.toggle('active');
+            });
+    
+            bxSearch.addEventListener('click',()=>{
+                sidebar.classList.toggle('active');
+                home.classList.toggle('active');
+            });
+        </script>
+        <script src="relogio.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+        <script src="assets/js/auth.js"></script>
+
+    </body>
+</html>

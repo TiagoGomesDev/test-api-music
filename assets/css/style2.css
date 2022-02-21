@@ -1,0 +1,26 @@
+body {
+  font-family: 'Sora', sans-serif;
+  color: #636e72;
+  box-sizing: border-box;
+}
+
+.boas-vindas {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+button {
+  background-color: #2d3436;
+  border: none;
+  font-size: 1em;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5%;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+button:hover {
+  background-color: #636e72;
+}

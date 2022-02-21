@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mdb-ui-kit": "^3.10.2",
+    "swiper": "^7.4.1"
+  }
+}
