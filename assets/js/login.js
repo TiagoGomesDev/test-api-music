@@ -46,7 +46,8 @@ const entrar = () =>{
     senha.setAttribute('style', 'border-color: red')
     msgError.setAttribute('style', 'display: block');
     msgError.innerHTML = '<p>Usuário e/ou senha incorretos.</p>'
-    user.focus();
+    user.focus(msgError);
+    console(msgError)
   }
 
   //tratamento para login
