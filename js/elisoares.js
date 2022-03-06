@@ -10,33 +10,32 @@
 //paste it inside the array as more as you want music then you don't need to do any other thing
 
 let allMusic = [{
-    name: "Dona do Meu Coração",
-    artist: "Catedral",
+    name: "Me ajude a melhorar",
+    artist: "Eli Soares",
     img: "LuisCarlos",
-    src: "Banda Catedral   Dona do Meu Coração"
-    
+    src: "Me ajude a melhorar - Eli Soares [Casa de Deus]"
     // name: "Luis Thug",
     // path: "songs/LuisCarlos/l1.mpeg",
     //   img: "img/Cantores/LuisCarlos.jpeg",
   },
-  {
-    name: "Amor Sublime",
-    artist: "Catedral",
-    img: "LuisCarlos",
-    src: "Catedral  Amor Sublime"
-  },
-  {
-    name: "Mais Do Que Imaginei",
-    artist: "Catedral",
-    img: "LuisCarlos",
-    src: "Catedral  Mais do que Imaginei (Com Letra)"
-  },
-  {
-    name: "Eu Amo Mais Voce",
-    artist: "Catedral",
-    img: "LuisCarlos",
-    src: "catedral - eu amo mais voce(3)"
-  },
+  // {
+  //   name: "Amor Sublime",
+  //   artist: "Catedral",
+  //   img: "LuisCarlos",
+  //   src: "Catedral  Amor Sublime"
+  // },
+  // {
+  //   name: "Mais Do Que Imaginei",
+  //   artist: "Catedral",
+  //   img: "LuisCarlos",
+  //   src: "Catedral  Mais do que Imaginei (Com Letra)"
+  // },
+  // {
+  //   name: "Eu Amo Mais Voce",
+  //   artist: "Catedral",
+  //   img: "LuisCarlos",
+  //   src: "catedral - eu amo mais voce(3)"
+  // },
   // {
   //   name: "Ikson Anywhere – Ikson",
   //   artist: "Audio Library",
